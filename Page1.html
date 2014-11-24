@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>섹,계 Main Page</title>
+
+<script type="text/javascript">
+ function change()
+        {
+             var d = new Date() ;
+            
+             var h = d.getSeconds();
+             
+             
+            
+              if (h%2==0) {
+                document.body.style.backgroundColor="#4B0000";
+              }
+              else {
+                document.body.style.backgroundColor="#5D0000";
+              }
+            setTimeout("change()", 1000);
+        }
+       window.onload=function(){
+           change();
+       }
+
+	alert("이 홈페이지는 소개하고자하는 영화의 스포일러를 포함하고있습니다.")
+</script>
+<STYLE TYPE="text/css">
+#body{
+	background-color: black;
+	margin: 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+	opacity: 0.2;
+	transition: opacity 1s;
+}
+
+a{
+	text-decoration: none;
+}
+#body:hover{opacity: 1;
+}
+*/
+.pic{
+	position: relative;
+}
+.menubar{
+	background-color: black;
+	width: auto;
+	margin-top: 5px;
+	position: relative;
+}
+
+.mainname{
+	font-size: 20px;
+	color: red;
+	font-family: sans-serif;
+}
+
+.deco:hover{
+	color:white;
+}
+.deco{
+	color: red;
+}
+.me1{
+	position: relative;
+}
+/*
+----------->여기서 부터 반응형 웹
+*/
+
+@media screen and (max-width:639px){
+.mainpic{
+	max-width: 70%;
+}
+.mainname{
+	font-size:20px;
+}
+.deco{
+	margin-right: 3px;
+	font-size: 10px;
+}
+}
+/*
+----------->제일 작은 사이즈 입니다.
+*/
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+.mainpic{
+	max-width: 70%;
+}
+.mainname{
+	font-size:30px;
+}
+.deco{
+	margin-right: 5px;
+	font-size: 15px;
+}
+}
+/*
+----------->중간 사이즈 입니다.
+*/
+
+@media screen and (min-width:1024px){
+.mainpic{
+	max-width: 70%;
+}
+.mainname{
+	font-size:50px;
+}
+.deco{
+	margin-right: 10px;
+	font-size: 20px;
+}
+}
+/*
+----------->큰사이즈 입니다.
+*/
+</STYLE>
+</head>
+<body id="body">
+	<div class="pic">
+		<img class="mainpic" src="mainpic.jpg";></img>
+	</div>
+<div class="menubar">
+		<h1 class="mainname"><b>Lust,Caution</b></h1>
+		<span class="me1">
+			<a class="deco" href="page2.html"><u>작품설명</u></a>
+			<a class="deco" href="page4.html"><u>스틸컷</u></a>
+		</span>
+</div>
+</body>
+</html>

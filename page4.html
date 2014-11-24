@@ -1,21 +1,41 @@
 <!DOCTYPE hmtl>
 <html>
 <head>
+
+<script type="text/javascript">
+
+ function change()
+        {
+             var d = new Date() ;
+            
+             var h = d.getSeconds();
+             
+             
+            
+              if (h%2==0) {
+                document.body.style.backgroundColor="#4B0000";
+              }
+              else {
+                document.body.style.backgroundColor="#5D0000";
+              }
+            setTimeout("change()", 1000);
+        }
+       window.onload=function(){
+           change();
+       }
+       </script>
+
 	<title>Page4</title>
 	<STYLE TYPE="text/css">
 #all{
-		margin: 30px;
-	width: 1300px;
-	height: 800px;
+	margin: 30px;
+	width: auto;
+	height: auto;
 	background-color: black;
 	color: white;
 }
-.A7{
-	position: absolute;
-	margin-bottom: -40px;
-}
 .First{
-	margin-left: 35em;
+	position: relative;
 }
 .img{
 	max-width: 100%;
@@ -33,62 +53,93 @@ a{
 		text-decoration: none;
 }
 @media screen and (max-width:639px){
-.all{
-	width: 300px;
-}
 .pic1{
-	text-align: center;
-	width: 40%;
+	display: block;
+	margin: 0 auto;
+	width: auto;
 	position: relative;
+}
+.A1{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	position: relative;
+	opacity: 0.5;
+	transition: opacity 1s;
+	transition: width 3s;
+	width:30%;
+}
+.A1:hover{
+	width: 100%;
+	opacity: 1;
 }
 .tit{
 	font-size: 20px;
 }
 .First{
-	margin-top: 170px;
 	font-size: 20px;
-	margin-top: 4px;
-	margin-left: 375px;
-}
-.A7{
-	text-align: center;
-	width: 40%;
-	position: relative;
+	text-align: right;
 }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1023px){
 .pic1{
-	text-align: center;
-	width: 70%;
+	display: block;
+	margin: 0 auto;
+	width: auto;
 	position: relative;
 }
-.A7{
-	width: 70%;
-	margin-top: 30em;
-	margin-left: -40em;
-	position: absolute;
+.A1{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	position: relative;
+	opacity: 0.5;
+	transition: opacity 1s;
+	transition: width 3s;
+	width:30%;
+}
+.A1:hover{
+	width: 100%;
+	opacity: 1;
 }
 .tit{
 	font-size: 25px;
 }
 .First{
-	margin-top: 15em;
+position: absolute;
 	font-size: 25px;
-	margin-left: 26em;
+text-align: right;
 }
 }
 
 @media screen and (min-width:1024px){
 .pic1{
-	width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: auto;
 	position: relative;
+}
+.A1{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 35px;
+	position: relative;
+	opacity: 0.5;
+	transition: opacity 1s;
+	width:40%;
+	transition: width 3s;
+}
+.A1:hover{
+	width: 100%;
+	opacity: 1;
 }
 .tit{
 	font-size: 30px;
 }
 .First{
 	font-size: 30px;
+	text-align: right;
 }
 }
 
@@ -96,25 +147,26 @@ a{
 	</STYLE>
 </head>
 <body id="all">
-	<embed src="http://player.bgmstore.net/Wh8wd" allowscriptaccess="always" allowfullscreen="true" width="0.0000000001" height="0.0000000001"></embed><br><a href="page1.html" target="_blank">
+	<embed src="http://player.bgmstore.net/Wh8wd" allowscriptaccess="always" allowfullscreen="true" width="0.0000000001" height="0.0000000001"></embed>
 	<div>
-		<h1 class="tit">Still Cut</h1>
+		<a href="Page2.html"><h1 class="tit">Still Cut</h1></a>
 	</div>
 	<div>
 	<div class="pic1">
-		<img src="A1.jpg" alt="asad">
-		<img src="A2.jpg" >
-		<img src="A3.jpg">
-		<img src="A4.jpg">
-		<img src="A5.jpg">
-		<img src="A6.jpg">
-		<img src="A8.jpg">
-		<span class="A7">
-		<img src="A7.jpg" width="100%"/>
+	<center>
+		<img class="A1" src="A1.jpg">
+		<img class="A1" src="A2.jpg">
+		<img class="A1" src="A3.jpg">
+		<img class="A1" src="A4.jpg">
+		<img class="A1" src="A5.jpg">
+		<img class="A1" src="A6.jpg">
+		<img class="A1" src="A8.jpg">
+	</center>
 	</div>
 </div>
-	</div
-	<a href="page1.html"><h1 class="First">First Page</h1></a>
+	</div class="First">
+		<a href="Page1.html"><h1 class="First">First Page</h1></a>
 	</div>
+</form>
 </body>
 </html>

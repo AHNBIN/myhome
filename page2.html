@@ -1,6 +1,31 @@
 ﻿<!DOCTYPE hmtl>
 <html>
 <head>
+
+<script type="text/javascript">
+
+ function change()
+        {
+             var d = new Date() ;
+            
+             var h = d.getSeconds();
+             
+             
+            
+              if (h%2==0) {
+                document.body.style.backgroundColor="#4B0000";
+              }
+              else {
+                document.body.style.backgroundColor="#5D0000";
+              }
+            setTimeout("change()", 1000);
+        }
+       window.onload=function(){
+           change();
+       }
+
+       </script>
+
 	<title>섹계page2</title>
 	<STYLE TYPE="text/css">
 #all{
