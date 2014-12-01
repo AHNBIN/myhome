@@ -25,6 +25,16 @@
        }
 
 	alert("이 홈페이지는 소개하고자하는 영화의 스포일러를 포함하고있습니다.")
+/*
+----------->프린트
+*/
+
+		function print_page() {
+		window.print();
+	}
+/*
+----------->프린트
+*/
 </script>
 <STYLE TYPE="text/css">
 #body{
@@ -122,6 +132,9 @@ a{
 </STYLE>
 </head>
 <body id="body">
+
+	<input type="button" value="Print" onclick="print_page();">
+	
 	<div class="pic">
 		<img class="mainpic" src="mainpic.jpg";></img>
 	</div>
